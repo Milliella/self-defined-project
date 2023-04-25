@@ -1,0 +1,17 @@
+body{
+    background-color: bisque;
+}
+h1{
+    font-family: monospace;
+    color: black;
+    font-size: 70px;
+}
+h4{
+    font-family: monospace;
+    color: black;
+    font-size: 30px;
+}
+.headings{
+    text-align: center;
+
+}
