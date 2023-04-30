@@ -1,0 +1,28 @@
+/* making text appeare when hover over image */
+.overlay{
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+}
+.column :hover .overlay{
+    opacity: 1;
+}
+.text{
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+
+}
+.image{
+    display: block;
+    width: 100px;
+    height: 100px;
+}
