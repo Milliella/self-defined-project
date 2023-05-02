@@ -1,19 +1,14 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
 }
-body{
-    background-color:aqua ;
-    background-image: url("../images/canvas.jpeg"); 
+
+body {
+    background-color: aqua;
+    background-image: url("../images/canvas.jpeg");
 }
-h1{
-    /* font-family: monospace;
-    color: black;
-    font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 1px;
-    width: 500px;
-    margin-left: 520px; */
+
+h1 {
     font-family: monospace;
     color: black;
     font-size: 30px;
@@ -21,63 +16,71 @@ h1{
     margin-bottom: 1px;
     padding: 20px;
     border: 4px;
-   
+
 }
-p{
+
+p {
     font-family: monospace;
     color: black;
     font-size: 35px;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    margin-left: 600px;
-} 
-.header{
+
+}
+
+.header {
     text-align: center;
 }
-.header img{
+
+.header img {
     height: 60px;
     width: 60px;
+    margin-top: 5px;
 
 
 }
-.container {
+
+.infomation-container {
     display: block;
-    flex: none;
+    flex-wrap: wrap;
     position: relative;
-    
-    
-}
-.insta-infomation img{
-    margin-top: 30px;
-    margin-left: 550px;
-    width: 100px;
-    height: auto;
-    margin-bottom: 5px;
-       
-        
-   
-}
-.email-infomation img{
-    margin-top: 100px;
-    margin-left: 550px;
-    width: 100px;
-    height: auto;
-    margin-bottom: 5px;
-       
-        
-   
-}
-.insta-info p{
-    font-family: monospace;
-    color: rgb(0, 0, 0);
-    font-size: 30px;
-    margin-bottom: 1px;
-    margin-left: 750px;
-    margin-top: 1px;
-    font-size: 40px;
-    font-style: italic;
-    
-    
 
 
+}
+
+.infomation-container img {
+    display: block;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.column {
+    padding: 5px;
+
+}
+
+@media screen and (max-width: 900px) {
+    .column {
+        /* flex: 50%; */
+        min-width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .column {
+        /* flex: 100%; */
+        max-width: 100%;
+
+    }
+
+    .row {
+        flex-direction: column;
+    }
 }

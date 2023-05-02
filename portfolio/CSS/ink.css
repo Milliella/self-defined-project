@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
 body{
     background-color:aqua ;
     background-image: url("../images/canvas.jpeg"); 
@@ -22,8 +26,16 @@ h4{
 .header img{
     height: 60px;
     width: 60px;
+    margin-top: 5px;
 
 
+}
+.image-container {
+    display: block;
+    flex-wrap: wrap;
+    position: relative;
+    
+    
 }
 .container {
     display: block;
@@ -33,28 +45,41 @@ h4{
     
 }
 .column img{
-    margin-top: 15px;
-    margin-left: 200px;
-    width: 250px;
-    height: auto;
-    position: relative;
-    padding: 1px;
-    margin-bottom: 5px;
-    
-    
+    gap:10px;
+    object-fit: cover;    
+    width: 100%;
 }
 .column{
-    max-width: 25%;
-    float: left;
-    display: block;
-    position: relative;
-    width: auto;
+    flex: 1;
+    padding: 5px;
   
 }
 .row{
-    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    justify-content: center;
+    /* gap: 10px; */
+    object-fit: cover;
+    border-radius: 10px
 }
 .column img:hover{
     cursor: pointer;
 
+}
+@media screen and (max-width: 900px) {
+    .column{
+        /* flex: 50%; */
+        min-width: 50%;
+    }  
+}
+@media screen and (max-width: 500px) {
+    .column{
+        /* flex: 100%; */
+        min-width:100%;
+        
+    }
+    .row{
+        flex-direction: column;
+    }
 }
