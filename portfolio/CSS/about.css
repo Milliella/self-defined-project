@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
 body{
     background-color:aqua ;
     background-image: url("../images/canvas.jpeg"); 
@@ -32,4 +36,79 @@ h4{
     position: relative;
     
     
+}
+.image-container {
+    display: block;
+    flex-wrap: wrap;
+    position: relative;
+    
+    
+}
+.column img{
+    gap:10px;
+    object-fit: cover;    
+    width: 100%;
+}
+.column{
+    flex: 1;
+    padding: 5px;
+    position: relative;
+    width: 50%;
+  
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    justify-content: center;
+    /* gap: 10px; */
+    object-fit: cover;
+    border-radius: 10px;
+}
+@media screen and (max-width: 900px) {
+    .column{
+        /* flex: 50%; */
+        min-width: 50%;
+    }  
+}
+@media screen and (max-width: 500px) {
+    .column{
+        /* flex: 100%; */
+        min-width:100%;
+        
+    }
+    .row{
+        flex-direction: column;
+    }
+}
+.image{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay{
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: auto;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(15, 39, 77, 0.637);
+}
+.column:hover .overlay{
+    opacity: 1;
+}
+.text{
+    color: white;
+    font-family:sans-serif;
+    font-size:20px;
+    position: absolute;
+    bottom:30px ;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    opacity: 1;
 }
