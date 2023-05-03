@@ -99,19 +99,20 @@ h4{
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgba(15, 39, 77, 0.637);
+    background-color: rgba(151, 176, 216, 0.819);
 }
 .column:hover .overlay{
     opacity: 1;
 }
 .text{
-    color: white;
-    font-family:sans-serif;
-    font-size:20px;
+    color: rgb(0, 0, 0);
+    font-family:monospace;
+    font-size:25px;
     position: absolute;
-    bottom:30px ;
-    left: 30%;
+    top:40% ;
+    left: 50%;
+    bottom: 40%;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%);
     opacity: 1;
 }
