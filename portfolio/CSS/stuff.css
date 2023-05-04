@@ -58,3 +58,54 @@
             </div>
         </div>
     </div>
+
+/* modal image gallery stuff  */
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="painting images/blue-sqiggles-page.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="painting images/heart-blue-page.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="painting images/blue-acrylic-coral.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="painting images/blue-heart-page.jpeg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+            <div class="column2">
+                <img class="demo cursor" src="painting images/blue-sqiggles-page.jpeg" style="width: 100%" onclick="currentSlide(1)" alt="Organ on da move">
+            </div>
+            <div class="column2">
+                <img class="demo cursor" src="painting images/heart-blue-page.jpeg" style="width: 100%" onclick="currentSlide(1)" alt="its got a heart on it">
+            </div>
+            <div class="column2">
+                <img class="demo cursor" src="painting images/blue-acrylic-coral.jpeg" style="width: 100%" onclick="currentSlide(1)" alt="bad quality">
+            </div>
+            <div class="column2">
+                <img class="demo cursor" src="painting images/blue-heart-page.jpeg" style="width: 100%" onclick="currentSlide(1)" alt="another heart?">
+            </div>
+        </div>
+    </div>
+</body>
+
+onclick="openModal();currentSlide(1)"
+<script src="js/paintings.js"></script>
