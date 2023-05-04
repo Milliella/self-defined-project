@@ -42,12 +42,13 @@ h4 {
 
 
 }
+
 .image-container {
     display: block;
     flex-wrap: wrap;
     position: relative;
-    
-    
+
+
 }
 
 .column img {
@@ -62,6 +63,8 @@ h4 {
 
     flex: 1;
     padding: 5px;
+    position: relative;
+    width: 50%;
 
 
 }
@@ -95,4 +98,40 @@ h4 {
     .row {
         flex-direction: column;
     }
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(151, 176, 216, 0.819);
+}
+
+.column:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: rgb(0, 0, 0);
+    font-family: monospace;
+    font-size: 25px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    bottom: 40%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    opacity: 1;
 }
