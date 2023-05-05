@@ -84,7 +84,9 @@ p{font-family: monospace;
 #clickable :hover{
     cursor: pointer;
 }
-  
+#envalope{
+    height: 140px;
+}
 .about{
     display: block;
     flex: none;
