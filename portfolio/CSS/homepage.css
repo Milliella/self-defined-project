@@ -31,11 +31,12 @@ p{
 .row{
     display: flex;
     flex-wrap: wrap;
-    padding: 40px;
+    /* padding: 40px; */
     justify-content: center;
     gap: 1px;
     object-fit: cover;
     border-radius: 10px;
+    
 }
 .column{
     flex: 25%;
@@ -43,14 +44,14 @@ p{
     padding: 5px;
   
 }
-.column img{
+.row img{
     margin-top: 10px;
     width: 100%;
     position: relative;
     border-radius: 5px;
 }
 /*when you hover the mouse over the icons they turn transparent to indicate you're interating with them*/
-.column img:hover{
+.row img:hover{
     cursor: pointer;
     transition: 0.5s ease;
     z-index: 1;
