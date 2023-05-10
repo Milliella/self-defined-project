@@ -44,6 +44,7 @@ h4{
     gap:10px;
     object-fit: cover;    
     width: 100%;
+    
 }
 .column{
     flex: 1;
@@ -88,6 +89,7 @@ h4{
     display: block;
     width: 100%;
     height: auto;
+    border: 1px dashed rgb(2, 49, 46);
 }
 .overlay{
     position:absolute;
