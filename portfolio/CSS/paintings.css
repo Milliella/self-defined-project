@@ -104,7 +104,7 @@ h4{
     background-color: rgba(151, 176, 216, 0.819);
 }
 .column:hover .overlay{
-    opacity: 1;
+    opacity: 0.5 ease 5s;
 }
 .text{
     color: rgb(0, 0, 0);
