@@ -89,7 +89,7 @@ h4{
     display: block;
     width: 100%;
     height: auto;
-    border: 1px dashed rgb(2, 49, 46);
+    /* border: 1px dashed rgb(2, 49, 46); */
 }
 .overlay{
     position:absolute;
@@ -104,7 +104,7 @@ h4{
     background-color: rgba(151, 176, 216, 0.819);
 }
 .column:hover .overlay{
-    opacity: 0.5 ease 5s;
+    opacity: 1;
 }
 .text{
     color: rgb(0, 0, 0);
