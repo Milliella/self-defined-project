@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color:rgb(255, 255, 255) ;
+    background-image: url("../images/canvas.jpeg"); 
+}
+h1{
+    font-family: monospace;
+    color: black;
+    font-size: 30px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding: 20px;
+    border: 4px;
+   
+}
+h4{
+    font-family: monospace;
+    color: black;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.header{
+    text-align:center;
+}
+.header img{
+    height: 60px;
+    width: 60px;
+    margin-top: 5px;
+
+
+}
+.image-container {
+    display: block;
+    flex-wrap: wrap;
+    position: relative;
+    
+    
+}
+.column img{
+    gap:10px;
+    object-fit: cover;    
+    width: 100%;
+    
+}
+.column{
+    flex: 1;
+    padding: 5px;
+    position: relative;
+    width: 50%;
+  
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    justify-content: center;
+    /* gap: 10px; */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+ .column img:hover{
+    cursor: pointer;
+}
+
+
+/* makes the images change to better fit screensize*/
+@media screen and (max-width: 900px) {
+    .column{
+        flex: 50%;
+        min-width: 50%;
+    }  
+}
+@media screen and (max-width: 500px) {
+    .column{
+        flex: 100%;
+        min-width:100%;
+        
+    }
+    .row{
+        flex-direction: column;
+    }
+}
+.image{
+    display: block;
+    width: 100%;
+    height: auto;
+    /* border: 1px dashed rgb(2, 49, 46); */
+}
+.overlay{
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(151, 176, 216, 0.819);
+}
+.column:hover .overlay{
+    opacity: 1;
+}
+.text{
+    color: rgb(0, 0, 0);
+    font-family:monospace;
+    font-size:25px;
+    position: absolute;
+    top:40% ;
+    left: 50%;
+    bottom: 40%;
+    transform: translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%);
+    opacity: 1;
+}
+/* change */
