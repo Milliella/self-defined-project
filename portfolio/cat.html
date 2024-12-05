@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Cat</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    .cat {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      background: #f0a559;
+      border-radius: 50%;
+    }
+
+    /* Ears */
+    .cat::before,
+    .cat::after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background: #ffcc99;
+      border-radius: 50%;
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    }
+
+    .cat::before {
+      top: -30px;
+      left: -20px;
+    }
+
+    .cat::after {
+      top: -30px;
+      right: -20px;
+    }
+
+    /* Eyes */
+    .eye {
+      position: absolute;
+      top: 50px;
+      width: 20px;
+      height: 20px;
+      background: white;
+      border-radius: 50%;
+    }
+
+    .eye.left {
+      left: 40px;
+    }
+
+    .eye.right {
+      right: 40px;
+    }
+
+    .pupil {
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      width: 10px;
+      height: 10px;
+      background: black;
+      border-radius: 50%;
+    }
+
+    /* Nose */
+    .nose {
+      position: absolute;
+      top: 90px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 20px;
+      height: 10px;
+      background: pink;
+      border-radius: 50%;
+    }
+
+    /* Mouth */
+    .mouth {
+      position: absolute;
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40px;
+      height: 20px;
+      background: none;
+      border-bottom: 2px solid black;
+      border-radius: 0 0 40px 40px;
+    }
+
+    /* Whiskers */
+    .whisker {
+      position: absolute;
+      top: 100px;
+      width: 50px;
+      height: 2px;
+      background: black;
+    }
+
+    .whisker.left {
+      left: -50px;
+    }
+
+    .whisker.right {
+      right: -50px;
+    }
+
+    .whisker.left,
+    .whisker.right {
+      transform: rotate(15deg);
+    }
+
+    .whisker.left:nth-child(2),
+    .whisker.right:nth-child(2) {
+      transform: rotate(-15deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="cat">
+    <div class="eye left">
+      <div class="pupil"></div>
+    </div>
+    <div class="eye right">
+      <div class="pupil"></div>
+    </div>
+    <div class="nose"></div>
+    <div class="mouth"></div>
+    <div class="whisker left"></div>
+    <div class="whisker left"></div>
+    <div class="whisker right"></div>
+    <div class="whisker right"></div>
+  </div>
+</body>
+</html>
